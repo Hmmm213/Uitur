@@ -212,6 +212,9 @@ BtnStroke.Name = "BtnStroke"
     PPD.PaddingLeft = UDim.new(0, 9)
     PPD.PaddingTop = UDim.new(0, 2)
     local BtnStroke = Instance.new("UIStroke")
+    local Frame = Instance.new("Frame")
+    local TextLabel = Instance.new("TextLabel")
+
     local Page = Instance.new("Frame")
     Page.Name = "Page"
     Page.Parent = Main
@@ -274,6 +277,49 @@ BtnStroke.Name = "BtnStroke"
             end
         end
     end)
+ if _G.Mode == "English" then
+    Frame.Parent = Main
+    Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    Frame.BackgroundTransparency = 1.000
+    Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Frame.BorderSizePixel = 0
+    Frame.Position = UDim2.new(0.1, -150, 0.158805028, -80)
+    Frame.Size = UDim2.new(0, 327, 0, 100)
+
+    TextLabel.Parent = Frame
+    TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.BackgroundTransparency = 1.000
+    TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    TextLabel.BorderSizePixel = 0
+    TextLabel.Position = UDim2.new(0.199847102, 0, 0.25, 0)
+    TextLabel.Size = UDim2.new(0, 200, 0, 50)
+    TextLabel.Font = Enum.Font.FredokaOne
+    TextLabel.Text = "English Version"
+    TextLabel.TextColor3 = Color3.fromRGB(0, 86, 255)
+    TextLabel.TextSize = 18.000
+    TextLabel.TextWrapped = true
+ else
+    Frame.Parent = Main
+    Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    Frame.BackgroundTransparency = 1.000
+    Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Frame.BorderSizePixel = 0
+    Frame.Position = UDim2.new(0.1, -150, 0.158805028, -80)
+    Frame.Size = UDim2.new(0, 327, 0, 100)
+
+    TextLabel.Parent = Frame
+    TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.BackgroundTransparency = 1.000
+    TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    TextLabel.BorderSizePixel = 0
+    TextLabel.Position = UDim2.new(0.199847102, 0, 0.25, 0)
+    TextLabel.Size = UDim2.new(0, 200, 0, 50)
+    TextLabel.Font = Enum.Font.FredokaOne
+    TextLabel.Text = "Thai Version"
+    TextLabel.TextColor3 = Color3.fromRGB(0, 86, 255)
+    TextLabel.TextSize = 18.000
+    TextLabel.TextWrapped = true
+ end
     local uitab = {}
 
     function uitab:Tab(text, img)
