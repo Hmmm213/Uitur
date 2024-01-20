@@ -7,6 +7,7 @@ if not game:IsLoaded() then
 	GameLoadGui:Destroy();
 	task.wait(10);
 end;
+_G.Color = Color3.fromRGB(0, 86, 255)
 if game:GetService("CoreGui").RobloxGui.Modules:FindFirstChild("VVV") then game:GetService("CoreGui").RobloxGui.Modules:FindFirstChild("VVV"):Destroy() end
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -99,7 +100,7 @@ function Update:Window(text, logo, keybind)
     BtnStroke.Name = "BtnStroke"
     BtnStroke.Parent = Main
     BtnStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-    BtnStroke.Color = Color3.fromRGB(28, 107, 186)
+    BtnStroke.Color = _G.Color 
     BtnStroke.LineJoinMode = Enum.LineJoinMode.Round
     BtnStroke.Thickness = 1
     BtnStroke.Transparency = 0
@@ -317,7 +318,7 @@ BtnStroke.Name = "BtnStroke"
         BtnStroke.Name = "BtnStroke"
         BtnStroke.Parent = TabButton
         BtnStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-        BtnStroke.Color = Color3.fromRGB(28, 107, 186)
+        BtnStroke.Color = _G.Color 
         BtnStroke.LineJoinMode = Enum.LineJoinMode.Round
         BtnStroke.Thickness = 1
         BtnStroke.Transparency = 0
@@ -583,7 +584,7 @@ UICornerFrame.Parent = TabFrame
 
             TextBtn.Name = "TextBtn"
             TextBtn.Parent = Button
-            TextBtn.BackgroundColor3 = Color3.fromRGB(28, 107, 186)
+            TextBtn.BackgroundColor3 = _G.Color 
             TextBtn.Position = UDim2.new(0, 1, 0, 1)
             TextBtn.Size = UDim2.new(0, 385, 0, 32)
             TextBtn.AutoButtonColor = false
@@ -740,7 +741,6 @@ end
         function main:Toggle(text, config, callback)
             config = config or false
             local toggled = config
-            _G.Color = Color3.fromRGB(28, 107, 186)
             local UICorner = Instance.new("UICorner")
             local UIStroke = Instance.new("UIStroke")
             local Button = Instance.new("TextButton")
@@ -766,7 +766,7 @@ end
             UIStroke.Name = "UIStroke"
             UIStroke.Parent = Button
             UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-            UIStroke.Color = Color3.fromRGB(28, 107, 186)
+            UIStroke.Color = _G.Color 
             UIStroke.LineJoinMode = Enum.LineJoinMode.Round
             UIStroke.Thickness = 1
             UIStroke.Transparency = 0
@@ -882,7 +882,7 @@ Title.TextXAlignment = Enum.TextXAlignment.Left
             UIStroke.Name = "UIStroke"
             UIStroke.Parent = Dropdown
             UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-            UIStroke.Color = Color3.fromRGB(28, 107, 186)
+            UIStroke.Color = _G.Color 
             UIStroke.LineJoinMode = Enum.LineJoinMode.Round
             UIStroke.Thickness = 1
             UIStroke.Transparency = 0
@@ -1100,7 +1100,7 @@ Title.TextXAlignment = Enum.TextXAlignment.Left
             -- Prop --
             SliderFrame.Name = slidertitle or "SliderFrame"
             SliderFrame.Parent = MainFramePage
-            SliderFrame.BackgroundColor3 = Color3.fromRGB(28, 107, 186)
+            SliderFrame.BackgroundColor3 = _G.Color 
             SliderFrame.BackgroundTransparency = 1.000
             SliderFrame.BorderSizePixel = 0
             SliderFrame.Size = UDim2.new(0, 387, 0, 60)
@@ -1116,7 +1116,7 @@ Title.TextXAlignment = Enum.TextXAlignment.Left
             UIStroke.Name = "UIStroke"
             UIStroke.Parent = SliderFrame_2
             UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-            UIStroke.Color = Color3.fromRGB(28, 107, 186)
+            UIStroke.Color = _G.Color 
             UIStroke.LineJoinMode = Enum.LineJoinMode.Round
             UIStroke.Thickness = 1
             UIStroke.Transparency = 0
@@ -1128,7 +1128,7 @@ Title.TextXAlignment = Enum.TextXAlignment.Left
 
             ImageLabel.Name = "ImageLabel"
             ImageLabel.Parent = SliderFrame_2
-            ImageLabel.BackgroundColor3 = Color3.fromRGB(28, 107, 186)
+            ImageLabel.BackgroundColor3 = _G.Color 
             ImageLabel.BackgroundTransparency = 1.000
             ImageLabel.BorderSizePixel = 0
             ImageLabel.Position = UDim2.new(0, 7.5, 0, 7.5)
@@ -1151,7 +1151,7 @@ Title.TextXAlignment = Enum.TextXAlignment.Left
 
             SliderInput.Name = "SliderInput"
             SliderInput.Parent = SliderFrame_2
-            SliderInput.BackgroundColor3 = Color3.fromRGB(28, 107, 186)
+            SliderInput.BackgroundColor3 = _G.Color 
             SliderInput.BackgroundTransparency = 0.7
             SliderInput.BorderSizePixel = 0
             SliderInput.Position = UDim2.new(0, 8, 0, 42)
@@ -1162,7 +1162,7 @@ Title.TextXAlignment = Enum.TextXAlignment.Left
 
             SliderButton.Name = "SliderButton"
             SliderButton.Parent = SliderInput
-            SliderButton.BackgroundColor3 = Color3.fromRGB(28, 107, 186)
+            SliderButton.BackgroundColor3 = _G.Color 
             SliderButton.BackgroundTransparency = 1.000
             SliderButton.BorderSizePixel = 0
             SliderButton.Position = UDim2.new(0, 0, 0, -7)
@@ -1170,7 +1170,7 @@ Title.TextXAlignment = Enum.TextXAlignment.Left
 
             SliderCount.Name = "SliderCount"
             SliderCount.Parent = SliderButton
-            SliderCount.BackgroundColor3 = Color3.fromRGB(28, 107, 186)
+            SliderCount.BackgroundColor3 = _G.Color 
             SliderCount.BackgroundTransparency = 0.3
             SliderCount.BorderSizePixel = 0
             SliderCount.Position = UDim2.new(0, start, 0, 0)
@@ -1179,7 +1179,7 @@ Title.TextXAlignment = Enum.TextXAlignment.Left
             Title_2.Name = "Title_2"
             Title_2.Parent = SliderButton
             Title_2.AnchorPoint = Vector2.new(0, 0)
-            Title_2.BackgroundColor3 = Color3.fromRGB(28, 107, 186)
+            Title_2.BackgroundColor3 = _G.Color 
             Title_2.AutoButtonColor = false
             Title_2.BackgroundTransparency = 1.000
             Title_2.Position = UDim2.new(0, start, 0, 0)
@@ -1199,7 +1199,7 @@ Title.TextXAlignment = Enum.TextXAlignment.Left
             SliderStroke.Name = "SliderStroke"
             SliderStroke.Parent = BoxFrame
             SliderStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-            SliderStroke.Color = Color3.fromRGB(28, 107, 186)
+            SliderStroke.Color = _G.Color 
             SliderStroke.LineJoinMode = Enum.LineJoinMode.Round
             SliderStroke.Thickness = 1
             SliderStroke.Transparency = 0.5
@@ -1208,7 +1208,7 @@ Title.TextXAlignment = Enum.TextXAlignment.Left
 
             BoxFrame.Name = "BoxFrame"
             BoxFrame.Parent = SliderFrame_2
-            BoxFrame.BackgroundColor3 = Color3.fromRGB(28, 107, 186)
+            BoxFrame.BackgroundColor3 = _G.Color 
             BoxFrame.BackgroundTransparency = 1.000
             BoxFrame.Size = UDim2.new(0, 50, 0, 15)
             BoxFrame.Position = UDim2.new(0, 323, 0, 8)
@@ -1664,7 +1664,7 @@ end
 
             Textbox.Name = "Textbox"
             Textbox.Parent = MainFramePage
-            Textbox.BackgroundColor3 = Color3.new(28, 107, 186)
+            Textbox.BackgroundColor3 = _G.Color 
             Textbox.BackgroundTransparency = 0
             Textbox.Size = UDim2.new(0, 387, 0, 31)
 
@@ -1684,7 +1684,7 @@ end
 
             TextboxLabel.Name = "TextboxLabel"
             TextboxLabel.Parent = Textbox
-            TextboxLabel.BackgroundColor3 = Color3.fromRGB(28, 107, 186)
+            TextboxLabel.BackgroundColor3 = _G.Color 
             TextboxLabel.BackgroundTransparency = 1.000
             TextboxLabel.Position = UDim2.new(0, 15, 0, 0)
             TextboxLabel.Text = text
@@ -1794,7 +1794,7 @@ end
 
             Textbox.Name = "Textbox"
             Textbox.Parent = MainFramePage
-            Textbox.BackgroundColor3 = Color3.new(28, 107, 186)
+            Textbox.BackgroundColor3 = _G.Color 
             Textbox.BackgroundTransparency = 0
             Textbox.Size = UDim2.new(0, 387, 0, 31)
 
@@ -1814,7 +1814,7 @@ end
 
             TextboxLabel.Name = "TextboxLabel"
             TextboxLabel.Parent = Textbox
-            TextboxLabel.BackgroundColor3 = Color3.fromRGB(28, 107, 186)
+            TextboxLabel.BackgroundColor3 =_G.Color 
             TextboxLabel.BackgroundTransparency = 1.000
             TextboxLabel.Position = UDim2.new(0, 15, 0, 0)
             TextboxLabel.Text = text
@@ -1827,7 +1827,7 @@ end
 
             txtbtn.Name = "txtbtn"
             txtbtn.Parent = Textbox
-            txtbtn.BackgroundColor3 = Color3.fromRGB(28, 107, 186)
+            txtbtn.BackgroundColor3 = _G.Color 
             txtbtn.BackgroundTransparency = 1.000
             txtbtn.Position = UDim2.new(0, 1, 0, 1)
             txtbtn.Size = UDim2.new(0, 387, 0, 29)
@@ -1935,7 +1935,7 @@ end
             Labeld.BackgroundTransparency = 1.000
             Labeld.Size = UDim2.new(0, 410, 0, 20)
             Labeld.Font = Enum.Font.GothamSemibold
-            Labeld.TextColor3 = Color3.fromRGB(28, 107, 186)
+            Labeld.TextColor3 = _G.Color 
             Labeld.TextSize = 15.000
             Labeld.Text = display or ""
             Labeld.TextXAlignment = Enum.TextXAlignment.Left
